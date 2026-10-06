@@ -100,9 +100,9 @@ The large dataset and processed Parquet files are intentionally \*\*not included
 
 Consumer Complaint Dataset
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 PySpark Ingestion
 
