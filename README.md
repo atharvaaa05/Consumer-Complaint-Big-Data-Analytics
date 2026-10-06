@@ -99,8 +99,10 @@ The large dataset and processed Parquet files are intentionally \*\*not included
 ```text
 
 Consumer Complaint Dataset
+|
 
-⬇️
+v
+
 PySpark Ingestion
 
 |
