@@ -100,51 +100,51 @@ The large dataset and processed Parquet files are intentionally \*\*not included
 
 Consumer Complaint Dataset
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 PySpark Ingestion
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Data Cleaning
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Transformation
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Parquet Storage
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Partitioning by Year
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Spark SQL
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Big Data Analytics
 
-&#x20;       |
+|
 
-&#x20;       v
+v
 
 Streamlit Dashboard
 
