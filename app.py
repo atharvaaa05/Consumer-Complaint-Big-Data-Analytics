@@ -20,7 +20,7 @@ st.set_page_config(
 # PATHS
 # ============================================================
 
-BASE_PATH = r"C:\Users\Atharva\Desktop\Consumer Complaint Analytics"
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 PARQUET_PATH = os.path.join(
     BASE_PATH,
