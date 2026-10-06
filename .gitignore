@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Large datasets
+data/complaints.csv
+data/raw/
+data/processed/
+
+# Generated analytics/results
+results/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+data/spark_temp/
