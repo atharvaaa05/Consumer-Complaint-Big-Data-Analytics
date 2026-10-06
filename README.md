@@ -2,7 +2,7 @@
 
 
 
-A Big Data Analytics platform for analyzing large-scale consumer complaint data using PySpark, Spark SQL, Parquet and Streamlit.
+A Big Data Analytics platform for analyzing large-scale consumer complaint data using \*\*PySpark, Spark SQL, Parquet, and Streamlit\*\*.
 
 
 
@@ -10,7 +10,7 @@ A Big Data Analytics platform for analyzing large-scale consumer complaint data 
 
 
 
-This project processes and analyzes a large consumer complaint dataset and provides an interactive web dashboard for exploring complaint patterns.
+This project processes and analyzes a large consumer complaint dataset and provides an interactive web dashboard for exploring complaint patterns and trends.
 
 
 
@@ -46,7 +46,11 @@ The project focuses on Big Data Analytics techniques such as:
 
 
 
-No Machine Learning or NLP techniques are used.
+\*\*No Machine Learning or NLP techniques are used.\*\*
+
+
+
+\---
 
 
 
@@ -80,7 +84,11 @@ The dataset contains information such as:
 
 
 
-The large dataset is intentionally not included in this GitHub repository because of GitHub storage limitations.
+The large dataset and processed Parquet files are intentionally \*\*not included in this GitHub repository\*\* because of GitHub storage limitations.
+
+
+
+\---
 
 
 
@@ -92,60 +100,69 @@ The large dataset is intentionally not included in this GitHub repository becaus
 
 Consumer Complaint Dataset
 
-&#x20;         |
+&#x20;       |
 
-&#x20;         v
+&#x20;       v
 
-&#x20;   PySpark Ingestion
+PySpark Ingestion
 
-&#x20;         |
+&#x20;       |
 
-&#x20;         v
+&#x20;       v
 
-&#x20;    Data Cleaning
+Data Cleaning
 
-&#x20;         |
+&#x20;       |
 
-&#x20;         v
+&#x20;       v
 
-&#x20;     Transformation
+Transformation
 
-&#x20;         |
+&#x20;       |
 
-&#x20;         v
+&#x20;       v
 
-&#x20;  Parquet Storage
+Parquet Storage
 
-&#x20;         |
+&#x20;       |
 
-&#x20;         v
+&#x20;       v
 
-&#x20;    Partitioning
+Partitioning by Year
 
-&#x20;      by Year
+&#x20;       |
 
-&#x20;         |
+&#x20;       v
 
-&#x20;         v
+Spark SQL
 
-&#x20;     Spark SQL
+&#x20;       |
 
-&#x20;         |
+&#x20;       v
 
-&#x20;         v
+Big Data Analytics
 
-&#x20;  Big Data Analytics
+&#x20;       |
 
-&#x20;         |
+&#x20;       v
 
-&#x20;         v
+Streamlit Dashboard
 
-&#x20;  Streamlit Dashboard
-
-**Analytics Modules**
+```
 
 
-1\. ETL Pipeline
+
+\---
+
+
+
+\## Analytics Modules
+
+
+
+\### 1. ETL Pipeline
+
+
 
 \- Data ingestion
 
@@ -159,11 +176,15 @@ Consumer Complaint Dataset
 
 \- Date transformation
 
-\- Feature/column creation
+\- Feature and column creation
 
 \- Parquet generation
 
-2\. Data Quality
+
+
+\### 2. Data Quality
+
+
 
 \- Missing value analysis
 
@@ -175,7 +196,11 @@ Consumer Complaint Dataset
 
 \- Unique value analysis
 
-3\. Spark SQL
+
+
+\### 3. Spark SQL
+
+
 
 \- Grouping
 
@@ -185,21 +210,29 @@ Consumer Complaint Dataset
 
 \- Multidimensional queries
 
-4\. Window Analytics
 
-\- Rankings
+
+\### 4. Window Analytics
+
+
+
+\- Product rankings
 
 \- Running totals
 
 \- Previous-period comparison
 
-\- MoM growth
+\- Month-over-month growth
 
 \- Percentage contribution
 
 \- Cumulative contribution
 
-5\. Time-Series Analytics
+
+
+\### 5. Time-Series Analytics
+
+
 
 \- Monthly trends
 
@@ -215,7 +248,11 @@ Consumer Complaint Dataset
 
 \- Seasonal patterns
 
-6\. Geographic Analytics
+
+
+\### 6. Geographic Analytics
+
+
 
 \- State-wise complaint analysis
 
@@ -227,7 +264,13 @@ Consumer Complaint Dataset
 
 \- State × Company Response
 
-7\. Multidimensional Analysis
+\- Top product by state
+
+
+
+\### 7. Multidimensional Analysis
+
+
 
 \- Product × State
 
@@ -241,19 +284,35 @@ Consumer Complaint Dataset
 
 \- Product × State × Submission Method
 
-8\. Pareto Analysis
 
-Identifies the products responsible for the largest proportion of total complaints using cumulative percentage analysis.
 
-9\. Statistical Anomaly Detection
+\### 8. Pareto Analysis
 
-Uses statistical Z-score analysis to identify unusually high or low complaint volumes.
 
-No machine learning is used.
 
-10\. Performance Analysis
+Pareto analysis identifies the products responsible for the largest proportion of total complaints using cumulative percentage analysis.
 
-Measures:
+
+
+\### 9. Statistical Anomaly Detection
+
+
+
+Statistical Z-score analysis is used to identify unusually high or low complaint volumes.
+
+
+
+The anomaly detection module does \*\*not use Machine Learning\*\*.
+
+
+
+\### 10. Performance Analysis
+
+
+
+The performance module measures:
+
+
 
 \- Dataset size
 
@@ -261,15 +320,25 @@ Measures:
 
 \- Number of columns
 
-\- Parquet files
+\- Number of Parquet files
 
-\- Read performance
+\- Parquet read performance
 
 \- Aggregation performance
 
 \- Multidimensional query performance
 
-**Project Structure:**
+
+
+\---
+
+
+
+\## Project Structure
+
+
+
+```text
 
 Consumer-Complaint-Big-Data-Analytics/
 
@@ -282,6 +351,8 @@ Consumer-Complaint-Big-Data-Analytics/
 ├── requirements.txt
 
 ├── README.md
+
+├── .gitignore
 
 │
 
@@ -317,9 +388,50 @@ Consumer-Complaint-Big-Data-Analytics/
 
 └── results/
 
-Large datasets, processed Parquet files and generated results are excluded from GitHub.
+```
 
-**Requirements:**
+
+
+Large datasets, processed Parquet files, Spark temporary files, and generated result files are excluded from the GitHub repository.
+
+
+
+\---
+
+
+
+\## Technologies Used
+
+
+
+\- \*\*Python\*\*
+
+\- \*\*PySpark\*\*
+
+\- \*\*Apache Spark\*\*
+
+\- \*\*Spark SQL\*\*
+
+\- \*\*Pandas\*\*
+
+\- \*\*PyArrow\*\*
+
+\- \*\*Plotly\*\*
+
+\- \*\*Streamlit\*\*
+
+\- \*\*Parquet\*\*
+
+\- \*\*Git \& GitHub\*\*
+
+
+
+\---
+
+
+
+\## Requirements
+
 
 
 \- Python 3.x
@@ -336,82 +448,251 @@ Large datasets, processed Parquet files and generated results are excluded from 
 
 \- Plotly
 
-**Installation:**
 
 
-Clone the repository:
+\---
+
+
+
+\## Installation
+
+
+
+\### 1. Clone the Repository
+
+
+
+```bash
+
 git clone https://github.com/atharvaaa05/Consumer-Complaint-Big-Data-Analytics.git
 
-Navigate into the project:
+```
+
+
+
+\### 2. Navigate to the Project Directory
+
+
+
+```bash
+
 cd Consumer-Complaint-Big-Data-Analytics
 
-Install dependencies:
+```
+
+
+
+\### 3. Install Python Dependencies
+
+
+
+```bash
+
 pip install -r requirements.txt
 
-Running the Dashboard
+```
+
+
+
+\### 4. Configure Java and PySpark
+
+
+
+Make sure Java 17 and PySpark are installed and configured correctly before running the Big Data processing pipeline.
+
+
+
+\---
+
+
+
+\## Running the Dashboard
+
+
 
 After placing the processed Parquet dataset in the required project directory, run:
+
+
+
+```bash
+
 python -m streamlit run app.py
 
-The dashboard will open in the browser.
+```
 
 
-Running the Analytics Pipeline
 
-The individual analytics modules are available inside the pipeline directory.
-
-The pipeline can be executed locally using PySpark after configuring the required dataset and Spark/Java environment.
-
-**Technologies Used:**
+The Streamlit dashboard will open in the browser.
 
 
-\- Python
 
-\- PySpark
-
-\- Apache Spark
-
-\- Spark SQL
-
-\- Pandas
-
-\- PyArrow
-
-\- Plotly
-
-\- Streamlit
-
-\- Parquet
-
-\- Git/GitHub
+\---
 
 
-**Big Data Concepts Demonstrated:**
+
+\## Running the Analytics Pipeline
+
+
+
+The individual Big Data Analytics modules are available inside the `pipeline` directory.
+
+
+
+The pipeline can be executed locally using PySpark after configuring the required dataset and Java/Spark environment.
+
+
+
+The main analytics modules include:
+
+
+
+```text
+
+pipeline/
+
+├── etl.py
+
+├── data\_quality.py
+
+├── spark\_sql\_analytics.py
+
+├── window\_analytics.py
+
+├── time\_series.py
+
+├── geographic\_analytics.py
+
+├── multidimensional.py
+
+├── pareto\_analysis.py
+
+├── anomaly\_detection.py
+
+└── performance\_analysis.py
+
+```
+
+
+
+\---
+
+
+
+\## Big Data Concepts Demonstrated
+
+
+
+This project demonstrates the following Big Data concepts:
+
 
 
 \- Distributed data processing
 
 \- ETL
 
+\- Data cleaning
+
 \- Columnar storage
+
+\- Parquet
 
 \- Data partitioning
 
-\- SQL-based analytics
-
-\- Window functions
+\- Spark SQL
 
 \- Aggregations
+
+\- Window functions
 
 \- Multidimensional analysis
 
 \- Time-series analysis
 
-\- Statistical analysis
+\- Geographic analysis
+
+\- Pareto analysis
+
+\- Statistical anomaly detection
 
 \- Performance measurement
 
+\- Interactive data visualization
 
+
+
+\---
+
+
+
+\## Dashboard Features
+
+
+
+The Streamlit dashboard provides the following sections:
+
+
+
+1\. Dashboard
+
+2\. Data Pipeline
+
+3\. Data Quality
+
+4\. Complaint Analytics
+
+5\. Time-Series Analytics
+
+6\. Geographic Analytics
+
+7\. Multidimensional Analysis
+
+8\. Pareto Analysis
+
+9\. Anomaly Detection
+
+10\. Performance
+
+11\. Insights
+
+
+
+\---
+
+
+
+\## Key Project Highlights
+
+
+
+\- Processes and analyzes \*\*1 million consumer complaint records\*\*
+
+\- Uses \*\*PySpark for Big Data processing\*\*
+
+\- Uses \*\*Parquet for columnar storage\*\*
+
+\- Uses \*\*Year-based partitioning\*\*
+
+\- Uses \*\*Spark SQL and Window Functions\*\*
+
+\- Performs multidimensional and time-series analytics
+
+\- Performs statistical anomaly detection without Machine Learning
+
+\- Provides an interactive Streamlit dashboard
+
+\- Includes performance analysis of Big Data operations
+
+
+
+\---
+
+
+
+\## Project Objective
+
+
+
+The objective of this project is to demonstrate how large-scale consumer complaint data can be processed, stored, queried, and analyzed using Big Data technologies to identify meaningful patterns, trends, distributions, anomalies, and relationships across multiple dimensions.
 
 
 
